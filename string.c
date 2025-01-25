@@ -34,6 +34,18 @@ UINTN strlen(const CHAR16 *str)
   return p - str;
 }
 
+VOID *strcpy(CHAR16 *dest, const CHAR16 *src)
+{
+  return memcpy(dest, src, (strlen(src) + 1) * sizeof(CHAR16));
+}
+
+VOID *strcat(CHAR16 *dest, const CHAR16 *src)
+{
+  strcpy(dest + strlen(dest), src);
+
+  return dest;
+}
+
 VOID *memset(VOID *s, UINTN c, UINTN size)
 {
   UINT8 *p = s;
