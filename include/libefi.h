@@ -22,12 +22,12 @@ UINTN strlen(const CHAR16 *);
 VOID *strcpy(CHAR16 *dest, const CHAR16 *src);
 VOID *strcat(CHAR16 *, const CHAR16 *);
 VOID *memset(VOID *, UINTN, UINTN);
+VOID *memcpy(VOID *, const VOID *, UINT64);
 
 // Stdlib functions.
 VOID *bmalloc(UINTN);
 VOID bfree(VOID *);
 VOID uitoh(CHAR16 *, UINT64);
 VOID itos(CHAR16 *, INTN);
-VOID *memcpy(VOID *, const VOID *, UINT64);
 
 #endif
