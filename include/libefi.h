@@ -28,8 +28,6 @@ VOID *bmalloc(UINTN);
 VOID bfree(VOID *);
 VOID uitoh(CHAR16 *, UINT64);
 VOID itos(CHAR16 *, INTN);
-
-// Mem functions.
 VOID *memcpy(VOID *, const VOID *, UINT64);
 
 #endif
