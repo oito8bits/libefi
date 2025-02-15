@@ -24,12 +24,10 @@ VOID *strcat(CHAR16 *, const CHAR16 *);
 VOID *memset(VOID *, UINTN, UINTN);
 
 // Stdlib functions.
+VOID *bmalloc(UINTN);
+VOID bfree(VOID *);
 VOID uitoh(CHAR16 *, UINT64);
 VOID itos(CHAR16 *, INTN);
-
-// Pool functions.
-VOID *bmalloc(UINTN, EFI_MEMORY_TYPE);
-VOID bfree(VOID *);
 
 // Mem functions.
 VOID *memcpy(VOID *, const VOID *, UINT64);
