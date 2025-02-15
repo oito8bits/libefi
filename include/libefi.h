@@ -25,8 +25,8 @@ VOID *memset(VOID *, UINTN, UINTN);
 VOID *memcpy(VOID *, const VOID *, UINT64);
 
 // Stdlib functions.
-VOID *bmalloc(UINTN);
-VOID bfree(VOID *);
+VOID *malloc(UINTN);
+VOID free(VOID *);
 VOID uitoh(CHAR16 *, UINT64);
 VOID itos(CHAR16 *, INTN);
 
