@@ -11,7 +11,7 @@ extern EFI_RUNTIME_SERVICES *RS;
 
 VOID init_lib(EFI_HANDLE, EFI_SYSTEM_TABLE *);
 
-// Console functions.
+// Stdio functions.
 VOID puts(const CHAR16 *);
 VOID putchar(CHAR16);
 INTN printf(const CHAR16 *, ...);

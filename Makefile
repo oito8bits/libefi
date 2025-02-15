@@ -1,6 +1,6 @@
 CC=x86_64-w64-mingw32-gcc
 LIB_NAME=libefi.a
-OBJS=console.o init.o string.o stdlib.o
+OBJS=stdio.o init.o string.o stdlib.o
 
 $(LIB_NAME): $(OBJS)
 	$(AR) rcs $@ $^
