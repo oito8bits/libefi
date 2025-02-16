@@ -18,20 +18,6 @@ VOID free(VOID *buffer)
   BS->FreePool(buffer);
 }
 
-static VOID reverse_string(CHAR16 *str)
-{
-  CHAR16 *p, *q, c;
-
-  p = str;
-  q = str + strlen(str) - 1;
-  while(q > p)
-  {
-    c = *q;
-    *q-- = *p;
-    *p++ = c;
-  }
-}
-
 VOID uitoh(CHAR16 *dest, UINT64 number)
 {
   INT8 i = 60;
@@ -90,6 +76,6 @@ VOID itos(CHAR16 *dest, INTN number)
     *p++ = L'-';
 
   *p = L'\0';
-  reverse_string(dest);
+  strrev(dest);
 }
 

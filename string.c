@@ -46,6 +46,22 @@ VOID *strcat(CHAR16 *dest, const CHAR16 *src)
   return dest;
 }
 
+VOID *strrev(CHAR16 *str)
+{
+  CHAR16 *p, *q, c;
+
+  p = str;
+  q = str + strlen(str) - 1;
+  while(q > p)
+  {
+    c = *q;
+    *q-- = *p;
+    *p++ = c;
+  }
+
+  return str;
+}
+
 VOID *memset(VOID *s, UINTN c, UINTN size)
 {
   UINT8 *p = s;
