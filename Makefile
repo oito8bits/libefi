@@ -1,4 +1,5 @@
 CC=x86_64-w64-mingw32-gcc
+AR=x86_64-w64-mingw32-ar
 LIB_NAME=libefi.a
 OBJS=stdio.o init.o string.o stdlib.o
 
