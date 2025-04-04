@@ -21,7 +21,7 @@ INTN memcmp(const VOID *, const VOID *, INTN);
 UINTN strlen(const CHAR16 *);
 INTN strcmp(const CHAR16 *, const CHAR16 *);
 INTN strncmp(const CHAR16 *, const CHAR16 *, UINTN);
-VOID *strcpy(CHAR16 *dest, const CHAR16 *src);
+VOID *strcpy(CHAR16 *, const CHAR16 *);
 VOID *strcat(CHAR16 *, const CHAR16 *);
 VOID *strrev(CHAR16 *str);
 VOID *memset(VOID *, UINTN, UINTN);
