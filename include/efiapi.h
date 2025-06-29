@@ -267,7 +267,7 @@ typedef
 EFI_STATUS
 (EFIAPI *EFI_FREE_POOL)
 (
-  IN VOID *Buffer;
+  IN VOID *Buffer
 );
 
 typedef
